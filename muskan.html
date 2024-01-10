@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&display=swap" rel="stylesheet">
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hover card</title>
+  
+  <!-- <link rel="stylesheet" href="muskan.css"> -->
+
+
+  <style>
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Mulish, Arial, sans-serif ;
+  background-color: rgb(23, 168, 168);
+}
+
+.card{
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding: 30px 50px;
+  background-color: white;
+  cursor: pointer;
+
+}
+
+.card:hover{
+  height: 50px;
+}
+
+.imgbox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-80px);
+  z-index: 99;
+  
+}
+
+img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.content{
+  padding: 10px 20px;
+  text-align: center;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover > .content{
+  opacity: 1;
+  transform: translateY(-180px);
+}
+
+
+  </style>
+
+</head>
+
+
+
+
+<body>
+  <div class="card">
+    <div class="imgbox">
+      <img src="muskan-1.jpg">
+    </div>
+
+    <div class="content">
+      <h2>Keep Smiling</h2>
+      <p class="about-img">
+        muskan is very adorable girl who helps other first then herself
+she is childish but very strong who overcome from her any problem
+      </p>
+
+    </div>
+
+  </div>
+</body>
+</html>
